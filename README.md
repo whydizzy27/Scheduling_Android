@@ -10,12 +10,12 @@
 
 
 ### # 사용 언어 및 라이브러리
-JAVA <br>
+- JAVA <br>
 
 
 ### # 개발 환경
-OS : Window
-Tool : Android Studio
+- OS : Window
+- Tool : Android Studio
 
 
 ### # 구현 기능
