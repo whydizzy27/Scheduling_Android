@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/monthview"
+            android:visibility="visible"
+            android:background="@drawable/sky"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/MonthtextM"
+                android:textSize="35dp"
+                android:paddingLeft="20dp"
+                android:background="#55aaff"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="left"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#55aaff">
+
+                <Button
+                    android:id="@+id/Prevmonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#55aaff"
+                    android:textColor="#ffffff"
+                    android:text="prev"
+                    style="?android:attr/borderlessButtonStyle"
+                    />
+
+                <TextView
+                    android:id="@+id/YeartextM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"
+                    android:textSize="20dp" />
+
+
+                <Button
+                    android:id="@+id/Nextmonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#ffffff"
+                    android:background="#55aaff"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:text="next" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SUN"
+                    android:textColor="#ff0000"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MON"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TUE"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WED"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="THU"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FRI"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SAT"
+                    android:textColor="#0000ff"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/MonthGrid"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:numColumns="7"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="50dp"></GridView>
+        </LinearLayout>
+
+        //프레임 전환 여기서부터 주간
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/weekview"
+            android:visibility="invisible"
+            android:background="@drawable/sky"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/MonthtextW"
+                android:textSize="35dp"
+                android:paddingLeft="20dp"
+                android:background="#55aaff"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="left"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#55aaff">
+
+                <Button
+                    android:id="@+id/Prevweek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#55aaff"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:textColor="#ffffff"
+                    android:text="prev" />
+
+                <TextView
+                    android:id="@+id/YeartextW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"
+                    android:textSize="20dp" />
+
+
+                <Button
+                    android:id="@+id/Nextweek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#55aaff"
+                    android:textColor="#ffffff"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:text="next" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:id="@+id/WeekNum"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff0000"
+                    android:id="@+id/Sun"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:id="@+id/Mon"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:id="@+id/Tue"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:id="@+id/Wed"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:id="@+id/Thu"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:id="@+id/Fri"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="#0000ff"
+                    android:id="@+id/Sat"/>
+            </LinearLayout>
+            <GridView
+                android:id="@+id/WeekGrid"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:numColumns="8"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="50dp"></GridView>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

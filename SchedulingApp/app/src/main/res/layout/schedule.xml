@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Schedule Name"
+        android:textSize="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Schedulename"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="BeginDay"
+        android:id="@+id/Beginday"
+        android:textSize="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Begindaylayout"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+        <DatePicker
+            android:id="@+id/Schedulebegin"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            ></DatePicker>
+        <TimePicker
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/Schedulebegintime"
+            android:timePickerMode="spinner"
+            ></TimePicker>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/Begindaybtnlayout"
+        android:visibility="visible"
+        android:gravity="right"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/BeginCC"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:id="@+id/BeginCF"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="FinishDay"
+        android:id="@+id/Finishday"
+        android:textSize="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Finishdaylayout"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <DatePicker
+            android:id="@+id/ScheduleFinish"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            ></DatePicker>
+        <TimePicker
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/ScheduleFinishtime"
+            android:timePickerMode="spinner"
+            ></TimePicker>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/Finishdaybtnlayout"
+        android:visibility="gone"
+        android:gravity="right"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/FinishCC"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:id="@+id/FinishCF"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textSize="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Scheduleloc"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MEMO"
+        android:textSize="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Schedulememo"
+        />
+
+</LinearLayout>

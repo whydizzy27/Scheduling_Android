@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.techtown.ydgfinalproject4.MainActivity"
+    android:background="#55aaff"
+    >
+
+    <item
+        android:id="@+id/todayitem"
+        android:title="오 늘"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/monthview"
+        android:title="월 간"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/weekview"
+        android:title="주 간"
+        app:showAsAction="never"/>
+
+</menu>
