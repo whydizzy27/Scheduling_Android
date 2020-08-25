@@ -10,7 +10,8 @@
 
 
 ### :wrench: 사용 언어 및 라이브러리
-- JAVA <br>
+- JAVA 
+- Android
 
 
 ### :wind_chime: 개발 환경
